@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="/css/chat.css" rel="stylesheet">
+</head>
+
+<body style="background-color: currentColor;">
+  <!-- <p>Welcome to the chat app</p>
+
+  <ol id="messages"></ol>
+
+  <form id="message-form">
+    <input name="message" type="text" placeholder="Message"/>
+    <button>Send</button>
+  </form>
+  <button id="send-location">Send Location</button> -->
+
+<div class="container">
+
+    <!-- Page header start -->
+    <div class="page-title">
+        <div class="row gutters">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <h5 class="title">Chat App</h5>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"> </div>
+        </div>
+    </div>
+    <!-- Page header end -->
+
+    <!-- Content wrapper start -->
+    <div class="content-wrapper">
+
+        <!-- Row start -->
+        <div class="row gutters">
+
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                <div class="card m-0">
+
+                    <!-- Row start -->
+                    <div class="row no-gutters">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-3">
+                            <div class="users-container">
+                                <div class="chat-search-box">
+                                    
+                                        <h3><span class="name" style="color: #ed2553;font-weight: bold;">FRINDS LIST</span></h3>
+                                        
+                                    
+                                </div>
+                                <ul class="users" id="users">     
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-9 col-9">
+                            <div class="selected-user">
+                                <span>Group : <span class="name">Nova Node</span></span>
+                            </div>
+                            <div class="chat-container">
+                                <ul id="messages" class="chat-box chatContainerScroll">
+                                    <li class="chat-left">
+                                        <div class="chat-avatar">
+                                            <img src="https://www.bootdey.com/img/Content/avatar/avatar7.png" alt="Retail Admin">
+                                            <div class="chat-name">Russell</div>
+                                        </div>
+                                        <div class="chat-text">Welcom ChatApp</div>
+                                        <div class="chat-hour"> <span class="fa fa-check-circle"></span></div>
+                                    </li>
+                                  
+                                    
+                                </ul>
+                                <div class="form-group mt-9 mb-0" style="float: right;">
+                                  <form id="message-form" class="form-inline">
+                                    <div class="form-group ">
+                                      <input type="text" name="message"  class="form-control" placeholder="Message">
+                                    </div>
+                                    <button class="btn btn-primary">Send</button>
+                                  </form>
+                                  <div class="form-group mx-sm-12 mb-2">
+                                  <button class="btn btn-primary" style="float: right;margin-top: 5px;
+                                  width: 97%;" id="send-location">Send Location</button>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row end -->
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Row end -->
+
+    </div>
+    <!-- Content wrapper end -->
+
+</div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/libs/jquery-3.1.0.min.js"></script>
+  <script src="/js/libs/moment.js"></script>
+  <script src="/js/libs/deparam.js"></script>
+  <script src="/js/chat.js"></script>
+</body>
+
+</html>
